@@ -85,6 +85,11 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+<<<<<<< HEAD
+=======
+  
+  
+>>>>>>> 9493ec33f17171d8208b5e0a562b1442c602380b
   if(objeto.hasOwnProperty(propiedad)){
     return true 
   } else return false
@@ -126,12 +131,23 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+<<<<<<< HEAD
   usuarios.forEach(element => {
     element["esPremium"] = true
 }) 
 return usuarios
+=======
+
+   usuarios.forEach(objeto => {
+      objeto["esPremium"] = true
+   });
+   return usuarios
+
+>>>>>>> 9493ec33f17171d8208b5e0a562b1442c602380b
 
 }
+
+
 
 function sumarLikesDeUsuario (usuario) {
   // "usuario" tiene una propiedad llamada "posts" que es un array
