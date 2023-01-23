@@ -8,12 +8,28 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
+  class Usuario{
+  
+  Constructor(usuario, nombre, email, password){
+    this.usuario = usuario;
+    this.nombre = nombre;
+    this.email = email;
+    this.password = password;
+    this.saludar = function(){
+       return `Hola, mi nombre es ${this.nombre}`
+    }
+ }
+}
+ return Usuario
 }
 
-function agregarMetodoPrototype(Constructor) {
+function agregarMetodoPrototype(Usuario) {
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
+  Usuario.prototype.saludar = function(){
+    return "Hello World!"
+  }
 }
 
 function agregarStringInvertida() {
@@ -40,7 +56,8 @@ function agregarStringInvertida() {
       // Crea el constructor:
 
     }
-}
+  
+  }
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
